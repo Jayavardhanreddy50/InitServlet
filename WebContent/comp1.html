@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<meta charset="ISO-8859-1">
+
+<title>Complex Form Example</title>
+
+<script type=text/javascript>
+
+function qtyCheck(item) {
+
+      if(parseInt(item.value)==0)
+
+            alert("Enter a valid number");
+ 
+}
+
+</script>
+
+</head>
+
+<body>
+
+<form action="ComplexServlet" method="get">
+
+<label>Real 1</label>
+
+<input type="number" name="real1" placeholder="r1" required onchange="qtyCheck(this)"><br>
+
+<label>Imag 1</label>
+
+<input type="number" name="imag1" placeholder="i1" required onchange="qtyCheck(this)"><br>
+
+<label>Real 2</label>
+
+<input type="number" name="real2" placeholder="r2" required onchange="qtyCheck(this)"><br>
+
+<label>Imag 2</label>
+
+<input type="number" name="imag2" placeholder="i2" required onchange="qtyCheck(this)"><br>
+
+<input type="submit">
+
+</form>
+
+</body>
+
+</html>
